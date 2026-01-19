@@ -1,52 +1,77 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+.qaSection {
+  width: 100%;
+  padding: 3rem 1rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.intro {
-  max-width: 56rem;
-  margin: 0 auto 2rem;
-  color: #0f172a;
+.qaContainer {
+  max-width: 48rem;
+  width: 100%;
+}
+
+.qaItem {
+  margin-bottom: 3rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.qaItem:last-child {
+  border-bottom: none;
+}
+
+.qaQuestion {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 0.75rem 0;
+  color: #000;
+}
+
+.qaAnswer {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000;
+  margin: 0;
 }
 
 .sampleNote {
-  display: inline-block;
-  margin-top: 0.75rem;
-  padding: 0.75rem 1rem;
-  border-left: 3px solid #0ea5e9;
-  background: #f0f9ff;
-  border-radius: 10px;
+  margin-top: 1.5rem;
+  padding: 0;
+  border-left: none;
+  background: transparent;
+  border-radius: 0;
+  color: #000;
+  font-size: 0.875rem;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
+.sampleNote a {
   text-decoration: underline;
 }
 
-.title {
-  margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
+@media (max-width: 640px) {
+  .qaSection {
+    padding: 2rem 1rem;
+  }
+  
+  .qaQuestion {
+    font-size: 1rem;
+  }
+  
+  .qaAnswer {
+    font-size: 0.95rem;
+  }
 }
 
-.title {
-  text-align: center;
+.intro {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
 }
 
-.title,
-.description {
-  text-align: center;
-}
+
 
 .description {
   line-height: 1.5;
